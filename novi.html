@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <main id="form_conteudo">
+
+    <div id="form_principal">
+
+    <h1 id="form_titulo">
+    Cadastro do paciente
+    </h1>
+
+    <button class ="btn-padrao">
+
+        <i class="fa-solid fa-right-to-bracket"></i>
+
+    </button>
+
+    </div>
+
+    <form action="" id = "form">
+
+        <div id="input_conteudo">
+
+            <div class="input-caixa">
+
+                <label for="name" class="form_label">
+                    Primeiro nome
+                </label>
+
+                <div class = "input-campo">
+
+                    <input type="text" id ="nome" class = "form-control" >
+
+                    <i class = "fa-regular fa-user"></i>
+
+                </div>
+
+                </div>
+
+                <div class="input-caixa">
+
+                <label for="name" class="form_label">
+
+                     Sobrenome
+
+                </label>
+
+                <div class = "input-campo">
+
+                    <input type="text" id ="sobrenome" class = "form-control" >
+
+                    <i class = "fa-regular fa-user"></i>
+
+                </div>
+
+                </div>
+
+                   <div class="input-caixa">
+
+                <label for="dataDeNascimento" class="form_label">
+
+                     Data de Nascimento
+
+                </label>
+              
+
+                <div class = "input-campo">
+
+                    <input type="date" id ="dataDeNascimento" class = "form-control" >
+                </div>
+
+                </div>
+                   <div class="input-caixa">
+                <label for="name" class="form_label">
+                     CPF
+                </label>
+
+                <div class = "input-campo">
+
+                    <input type="number" id ="CPF" class = "form-control" >
+                </div>
+                </div>
+                   
+                 <div class="input-caixa">
+
+                <label for="name" class="form_label">
+
+                     Endereço
+
+                </label>
+
+                <div class = "input-campo">
+
+                    <input type="text" id ="endereco" class = "form-control" >
+
+                  
+
+                </div>
+
+                </div>
+                 <div class="input-caixa">
+                <label for="name" class="form_label">
+                     Telefone
+                </label>
+
+                <div class = "input-campo">
+
+                    <input type="number" id ="telefone" class = "form-control" >
+                </div>
+                </div>
+                <div class="input-caixa">
+
+                <label for="name" class="form_label">
+                   Nome da mãe
+                </label>
+
+                <div class = "input-campo">
+
+                    <input type="text" id ="nomeMae" class = "form-control" >
+
+                    <i class = "fa-regular fa-user"></i>
+
+                </div>
+
+                </div>
+
+                <div class="input-caixa">
+
+                <label for="name" class="form_label">
+
+                     Procedimento
+
+                </label>
+
+                <div class = "input-campo">
+
+                    <input type="text" id ="procedimento" class = "form-control" >
+
+                  
+
+                </div>
+
+                </div>
+                <div class="input-caixa">
+
+                <label for="name" class="form_label">
+                    Enfermeiro(a)
+                </label>
+
+                <div class = "input-campo">
+
+                    <input type="text" id ="responsavel" class = "form-control" >
+
+                    <i class = "fa-regular fa-user"></i>
+
+                </div>
+
+                </div>
+                     <div class="input-caixa">
+
+                <label for="name" class="form_label">
+                 Histórico de doenças
+                </label>
+
+                <div class = "input-campo">
+
+                    <input type="text" id ="doencas" class = "form-control" >
+
+               
+
+                </div>
+
+                </div>
+                        <div class="input-caixa">
+
+                <label for="name" class="form_label">
+                Medicações
+                </label>
+
+                <div class = "input-campo">
+
+                    <input type="text" id ="medicacao" class = "form-control" >
+
+
+                </div>
+
+                </div>
+
+               
+               
+
+                               
+
+                <div class="radio">
+
+                  <label class="form_label">
+                    Gênero
+                  </label>
+
+                 <!-- Exemplo para o grupo Gênero -->
+<div id="generoInput">
+  <div class="radio-caixa">
+    <input type="radio" id="feminino" name="genero" class="form-control" value="feminino">
+    <label for="feminino" class="form_label">Feminino</label>
+  </div>
+  <div class="radio-caixa">
+    <input type="radio" id="masculino" name="genero" class="form-control" value="masculino">
+    <label for="masculino" class="form_label">Masculino</label>
+  </div>
+  <div class="radio-caixa">
+    <input type="radio" id="outro" name="genero" class="form-control" value="outro">
+    <label for="outro" class="form_label">Outro</label>
+  </div>
+</div>
+   </div>
+
+    <div class="radio">
+      <label class="form_label">Alergias:</label>
+      <div id="alergia">
+      <input type="radio" id="alergiaSim" name="alergia" value="sim">
+      <label for="alergiaSim" class="form_label">Sim</label>
+      <input type="radio" id="alergiaNao" name="alergia" value="nao">
+      <label for="alergiaNao" class="form_label">Não</label>
+      <input type="radio" id="alergiaNaoSei" name="alergia" value="nao_sei">
+        <label for="alergiaNaoSei" class="form_label">Não sei</label>
+      <!-- Caixa de texto para detalhar alergia, escondida por padrão -->
+      <input type="text" id="alergiaDetalhe" class="form-control" placeholder="Descreva a alergia" style="display:none; margin-top:5px;">
+    </div>
+    </div>
+               <div class="radio">
+  <label class="form_label">Prioridade de atendimento </label>
+  <div id="especificacaoInput">
+    
+    <div class="radio-caixa">
+  <input type="radio" id="neuroatipico" name="prioridade" class="form-control" value="neuroatipico">
+  <label for="neuroatipico" class="form_label">Neurodivergente</label>
+  <input type="text" id="neuroatipicoDetalhe" class="form-control" placeholder="Descreva a neuroatipicidade" style="display:none; margin-top:5px;">
+</div>
+
+ <div class="radio-caixa">
+  <input type="radio" id="gestante" name="prioridade" class="form-control" value="gestante">
+  <label for="gestante" class="form_label">Gestante</label>
+  
+</div>
+  
+    <div class="radio-caixa">
+      <input type="radio" id="nenhuma" name="prioridade" class="form-control" value="nenhuma">
+      <label for="nenhuma" class="form_label">Nenhuma</label>
+    </div>
+  </div>
+
+  <div id = "sessentaMais">  
+    <label class="form_label">Especificações:</label>
+    <div class="radio-caixa">
+      <input type="radio" id="60mais" name="especificacao" class="form-control" value="60mais">
+      <label for="60mais" class="form_label">60 anos ou +</label>
+    </div>
+  </div>
+</div>
+            </div>
+        </div>
+        <div class="main" id = "resposta">
+          <ul id = "ul">
+            
+          </ul>
+        </div>
+
+<button type="submit" class="btn-padrao">
+    <i class="fa-solid fa-check"></i>
+    Enviar
+</button>
+
+    </form>
+
+</main>
+
+</body>
+<script src="novi.js"></script>
+</html>
