@@ -2,21 +2,6 @@
 const form = document.getElementById("form");
 const resposta = document.getElementById("ul");
 
-// Mensagem dinâmica
-function showMessage(msg, tipo = "erro") {
-  let msgDiv = document.getElementById("msg");
-  if (!msgDiv) {
-    msgDiv = document.createElement("div");
-    msgDiv.id = "msg";
-    msgDiv.style.margin = "10px 0";
-    msgDiv.style.fontWeight = "bold";
-    form.parentNode.insertBefore(msgDiv, form.nextSibling);
-  }
-  msgDiv.style.color = tipo === "erro" ? "red" : "green";
-  msgDiv.innerText = msg;
-  setTimeout(() => { msgDiv.innerText = ""; }, 3000);
-}
-
 // Exibe/oculta campo de detalhe de alergia
 document.getElementById("alergiaSim").addEventListener("change", function () {
   document.getElementById("alergiaDetalhe").style.display = "block";
@@ -40,7 +25,7 @@ document.querySelectorAll('input[name="prioridade"]').forEach(function (radio) {
   }
 });
 
-// Seleciona automaticamente "60 anos ou +" ao preencher data de nascimento
+// Seleção automática de "60 anos ou +"
 document.addEventListener('DOMContentLoaded', function() {
   const dataNascimento = document.getElementById('dataDeNascimento');
   const radio60mais = document.getElementById('60mais');
@@ -105,7 +90,7 @@ form.addEventListener("submit", function(e) {
     (alergia.value === "sim" && !alergiaDetalhe) ||
     (neuroatipicidade && neuroatipicidade.value === "neuroatipico" && !neuroatipicoDetalhe)
   ) {
-    showMessage("Por favor, preencha todos os campos obrigatórios.", "erro");
+    alert("Por favor, ensira os dados corretamente");
     return;
   }
 
@@ -152,7 +137,7 @@ form.addEventListener("submit", function(e) {
   `;
   resposta.appendChild(li);
 
-  showMessage("Concluído!", "sucesso");
+  alert("Concluído!");
   form.reset();
   document.getElementById("alergiaDetalhe").style.display = "none";
   document.getElementById("neuroatipicoDetalhe").style.display = "none";
